@@ -149,3 +149,45 @@ footer {
     height: 18px;
     display: block;
 }
+
+/* ---------- Responsive: Tablet ---------- */
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 20px 30px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 20px 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 56px;
+    }
+}
+
+/* ---------- Responsive: Mobile ---------- */
+@media (max-width: 600px) {
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 18px;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero-images {
+        grid-template-rows: repeat(3, 120px);
+        gap: 10px;
+    }
+}
